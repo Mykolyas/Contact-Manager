@@ -1,0 +1,117 @@
+﻿html {
+	font-size: 14px;
+}
+
+@media (min-width: 768px) {
+	html {
+		font-size: 16px;
+	}
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+	box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	margin-bottom: 60px;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	white-space: nowrap;
+	line-height: 60px;
+}
+
+/* Custom styles for contact manager */
+.editable {
+	cursor: pointer;
+	padding: 4px 8px;
+	border-radius: 4px;
+	transition: background-color 0.2s;
+}
+
+	.editable:hover {
+		background-color: #f8f9fa;
+	}
+
+	.editable.editing {
+		background-color: #fff3cd;
+		border: 1px solid #ffeaa7;
+	}
+
+	.editable input, .editable select {
+		border: none;
+		background: transparent;
+		outline: none;
+		width: 100%;
+	}
+
+.table th {
+	cursor: pointer;
+	user-select: none;
+}
+
+	.table th:hover {
+		background-color: #495057;
+	}
+
+	.table th.sortable::after {
+		content: " ↕";
+		opacity: 0.5;
+	}
+
+	.table th.sort-asc::after {
+		content: " ↑";
+		opacity: 1;
+	}
+
+	.table th.sort-desc::after {
+		content: " ↓";
+		opacity: 1;
+	}
+
+.loading {
+	opacity: 0.6;
+	pointer-events: none;
+}
+
+.alert {
+	animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+	from {
+		transform: translateY(-10px);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.card {
+	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+	border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+	.card:hover {
+		box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+		transition: box-shadow 0.15s ease-in-out;
+	}
+
+.btn {
+	transition: all 0.15s ease-in-out;
+}
+
+.table-hover tbody tr:hover {
+	background-color: rgba(0, 0, 0, 0.075);
+}
